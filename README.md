@@ -33,7 +33,7 @@ describe("develop simple way of testing elements of divs in strings", () => {
         F(COUNTHELPER("div div div", "div", 9))
     })
     })
-
+```
 ## Functions
 
 <dl>
