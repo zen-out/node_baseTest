@@ -18,7 +18,7 @@ npm install node_basetest
 
 ```
 // can import as a module
-const t = require("./index.js")
+const t = require("node_basetest")
 
     // or import specific functions
 
@@ -33,7 +33,9 @@ describe("develop simple way of testing elements of divs in strings", () => {
         F(COUNTHELPER("div div div", "div", 9))
     })
     })
+
 ```
+
 ## Functions
 
 <dl>
@@ -85,10 +87,11 @@ describe("develop simple way of testing elements of divs in strings", () => {
 | value | <code>any</code> | 
 
 **Example**  
+
 ```js
 it("my fav part of coding is making things", () => {
-        T(STARTSWITHHELPER("hello", "h"))
-    })
+    T(STARTSWITHHELPER("hello", "h"))
+})
 ```
 
 <a name="F"></a>

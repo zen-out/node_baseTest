@@ -1,7 +1,6 @@
 const S = require("string")
-const array = require("array")
+const _ = require("lodash")
 const chai = require("chai")
-const { contains } = require('object-lib');
 const assert = chai.assert
 
 /**********************************************
@@ -103,11 +102,10 @@ function COUNTHELPER(type, item, amount) {
     var isArr = Array.isArray(type);
     let counts;
     if (isArr) {
-        let getArray = array(type)
-        let getItemCount = getArray.count(function(x) {
-            return x === item
-        })
-        let getBoolean = item === amount;
+        let finalCount = _.countBy(arr, (eachOne) => {
+            eachOne === item
+        });
+        let getBoolean = finalCount === amount;
         counts = getBoolean
     } else if (typeof type === "string") {
         let getStringCount = S(type).count(item);
@@ -158,10 +156,9 @@ function ATLEASTHELPER(type, item, amount) {
     var isArr = Array.isArray(type);
     let counts;
     if (isArr) {
-        let getArray = array(type)
-        counts = getArray.count(function(x) {
-            return x === item
-        })
+        counts = _.countBy(arr, (eachOne) => {
+            eachOne === item
+        });
 
     } else if (typeof type === "string") {
         counts = S(type).count(item);
