@@ -18,7 +18,7 @@ npm install node_basetest
 
 ```
 // can import as a module
-const t = require("node_basetest")
+const t = require("./index.js")
 
     // or import specific functions
 
@@ -67,6 +67,10 @@ describe("develop simple way of testing elements of divs in strings", () => {
 <dd></dd>
 <dt><a href="#STARTSWITHHELPER">STARTSWITHHELPER(string, substring)</a> ⇒ <code>any</code></dt>
 <dd></dd>
+<dt><a href="#ISLESSHELPER">ISLESSHELPER(first, second, type)</a> ⇒ <code>any</code></dt>
+<dd></dd>
+<dt><a href="#ISLESS">ISLESS(one, two, type)</a> ⇒ <code>any</code></dt>
+<dd></dd>
 <dt><a href="#STARTSWITH">STARTSWITH(string, substring)</a> ⇒ <code>any</code></dt>
 <dd></dd>
 <dt><a href="#TRUNCATE">TRUNCATE(string, length, ending)</a> ⇒ <code>any</code></dt>
@@ -81,10 +85,11 @@ describe("develop simple way of testing elements of divs in strings", () => {
 
 **Kind**: global function  
 **Date**: 2022-02-10  
+**Author**: lezzles11 :) www.github.com/lezzles11  
 
-| Param | Type |
-| --- | --- |
-| value | <code>any</code> | 
+| Param | Type             |
+|-------|------------------|
+| value | <code>any</code> |
 
 **Example**  
 
@@ -100,10 +105,11 @@ it("my fav part of coding is making things", () => {
 
 **Kind**: global function  
 **Date**: 2022-02-10  
+**Author**: lezzles11 :) www.github.com/lezzles11  
 
-| Param | Type |
-| --- | --- |
-| value | <code>any</code> | 
+| Param | Type             |
+|-------|------------------|
+| value | <code>any</code> |
 
 **Example**  
 
@@ -119,11 +125,12 @@ it("but in order to code well", () => {
 
 **Kind**: global function  
 **Date**: 2022-02-09  
+**Author**: lezzles11 :) www.github.com/lezzles11  
 
-| Param | Type |
-| --- | --- |
-| one | <code>any</code> | 
-| two | <code>any</code> | 
+| Param | Type             |
+|-------|------------------|
+| one   | <code>any</code> |
+| two   | <code>any</code> |
 
 **Example**  
 
@@ -142,11 +149,12 @@ it('we need to test well', () => {
 
 **Kind**: global function  
 **Date**: 2022-02-10  
+**Author**: lezzles11 :) www.github.com/lezzles11  
 
-| Param | Type |
-| --- | --- |
-| one | <code>any</code> | 
-| two | <code>any</code> | 
+| Param | Type             |
+|-------|------------------|
+| one   | <code>any</code> |
+| two   | <code>any</code> |
 
 **Example**  
 
@@ -166,12 +174,13 @@ it('the problem is that the syntax is annoying', () => {
 
 **Kind**: global function  
 **Date**: 2022-02-10  
+**Author**: lezzles11 :) www.github.com/lezzles11  
 
-| Param | Type |
-| --- | --- |
-| type | <code>any</code> | 
-| item | <code>any</code> | 
-| amount | <code>any</code> | 
+| Param  | Type             |
+|--------|------------------|
+| type   | <code>any</code> |
+| item   | <code>any</code> |
+| amount | <code>any</code> |
 
 **Example**  
 
@@ -188,12 +197,13 @@ it('', () => {
 
 **Kind**: global function  
 **Date**: 2022-02-10  
+**Author**: lezzles11 :) www.github.com/lezzles11  
 
-| Param | Type |
-| --- | --- |
-| type | <code>any</code> | 
-| item | <code>any</code> | 
-| amount | <code>any</code> | 
+| Param  | Type             |
+|--------|------------------|
+| type   | <code>any</code> |
+| item   | <code>any</code> |
+| amount | <code>any</code> |
 
 **Example**  
 
@@ -213,12 +223,13 @@ it('', () => {
 
 **Kind**: global function  
 **Date**: 2022-02-10  
+**Author**: lezzles11 :) www.github.com/lezzles11  
 
-| Param | Type |
-| --- | --- |
-| type | <code>any</code> | 
-| item | <code>any</code> | 
-| amount | <code>any</code> | 
+| Param  | Type             |
+|--------|------------------|
+| type   | <code>any</code> |
+| item   | <code>any</code> |
+| amount | <code>any</code> |
 
 **Example**  
 
@@ -236,12 +247,13 @@ it("", () => {
 
 **Kind**: global function  
 **Date**: 2022-02-10  
+**Author**: lezzles11 :) www.github.com/lezzles11  
 
-| Param | Type |
-| --- | --- |
-| type | <code>any</code> | 
-| item | <code>any</code> | 
-| amount | <code>any</code> | 
+| Param  | Type             |
+|--------|------------------|
+| type   | <code>any</code> |
+| item   | <code>any</code> |
+| amount | <code>any</code> |
 
 **Example**  
 
@@ -259,11 +271,12 @@ it("", () => {
 
 **Kind**: global function  
 **Date**: 2022-02-10  
+**Author**: lezzles11 :) www.github.com/lezzles11  
 
-| Param | Type |
-| --- | --- |
-| string | <code>any</code> | 
-| item | <code>any</code> | 
+| Param  | Type             |
+|--------|------------------|
+| string | <code>any</code> |
+| item   | <code>any</code> |
 
 **Example**  
 
@@ -280,11 +293,12 @@ it('', () => {
 
 **Kind**: global function  
 **Date**: 2022-02-10  
+**Author**: lezzles11 :) www.github.com/lezzles11  
 
-| Param | Type |
-| --- | --- |
-| string | <code>any</code> | 
-| item | <code>any</code> | 
+| Param  | Type             |
+|--------|------------------|
+| string | <code>any</code> |
+| item   | <code>any</code> |
 
 **Example**  
 
@@ -301,11 +315,12 @@ it(' ', () => {
 
 **Kind**: global function  
 **Date**: 2022-02-10  
+**Author**: lezzles11 :) www.github.com/lezzles11  
 
-| Param | Type |
-| --- | --- |
-| data | <code>any</code> | 
-| type | <code>any</code> | 
+| Param | Type             |
+|-------|------------------|
+| data  | <code>any</code> |
+| type  | <code>any</code> |
 
 **Example**  
 
@@ -326,11 +341,12 @@ it('y ', () => {
 
 **Kind**: global function  
 **Date**: 2022-02-10  
+**Author**: lezzles11 :) www.github.com/lezzles11  
 
-| Param | Type |
-| --- | --- |
-| string | <code>any</code> | 
-| substring | <code>any</code> | 
+| Param     | Type             |
+|-----------|------------------|
+| string    | <code>any</code> |
+| substring | <code>any</code> |
 
 **Example**  
 
@@ -347,11 +363,12 @@ it("ends with", () => {
 
 **Kind**: global function  
 **Date**: 2022-02-10  
+**Author**: lezzles11 :) www.github.com/lezzles11  
 
-| Param | Type |
-| --- | --- |
-| string | <code>any</code> | 
-| substring | <code>any</code> | 
+| Param     | Type             |
+|-----------|------------------|
+| string    | <code>any</code> |
+| substring | <code>any</code> |
 
 **Example**  
 
@@ -368,11 +385,12 @@ it("ends with", () => {
 
 **Kind**: global function  
 **Date**: 2022-02-10  
+**Author**: lezzles11 :) www.github.com/lezzles11  
 
-| Param | Type |
-| --- | --- |
-| string | <code>any</code> | 
-| substring | <code>any</code> | 
+| Param     | Type             |
+|-----------|------------------|
+| string    | <code>any</code> |
+| substring | <code>any</code> |
 
 **Example**  
 
@@ -383,21 +401,70 @@ it("starts with", () => {
 })
 ```
 
+<a name="ISLESSHELPER"></a>
+
+## ISLESSHELPER(first, second, type) ⇒ <code>any</code>
+
+**Kind**: global function  
+**Date**: 2022-02-17  
+
+| Param  | Type             |
+|--------|------------------|
+| first  | <code>any</code> |
+| second | <code>any</code> |
+| type   | <code>any</code> |
+
+**Example**  
+
+```js
+T(ISLESSHELPER("a", "b", "string"))
+T(ISLESSHELPER(1, 2, "number"))
+T(ISLESSHELPER("Dec 11, 1993", "Dec 11, 1994", "date"))
+F(ISLESSHELPER("b", "a", "string"))
+F(ISLESSHELPER(2, 1, "number"))
+F(ISLESSHELPER("Dec 11, 1996", "Dec 11, 1995", "date"))
+```
+
+<a name="ISLESS"></a>
+
+## ISLESS(one, two, type) ⇒ <code>any</code>
+
+**Kind**: global function  
+**Date**: 2022-02-17  
+
+| Param | Type             |
+|-------|------------------|
+| one   | <code>any</code> |
+| two   | <code>any</code> |
+| type  | <code>any</code> |
+
+**Example**  
+
+```js
+ISLESS("a", "b", "string")
+ISLESS(1, 2, "number")
+ISLESS("Dec 11, 1993", "Dec 11, 1994", "date")
+ISLESS("b", "a", "string")
+ISLESS(2, 1, "number")
+ISLESS("Dec 11, 1996", "Dec 11, 1995", "date")
+```
+
 <a name="STARTSWITH"></a>
 
 ## STARTSWITH(string, substring) ⇒ <code>any</code>
 
 **Kind**: global function  
 **Date**: 2022-02-10  
+**Author**: lezzles11 :) www.github.com/lezzles11  
 
-| Param | Type |
-| --- | --- |
-| string | <code>any</code> | 
-| substring | <code>any</code> | 
+| Param     | Type             |
+|-----------|------------------|
+| string    | <code>any</code> |
+| substring | <code>any</code> |
 
 **Example**  
 
-```js
+```jsa
 it("starts with", () => {
     STARTSWITH("hello", "h")
     STARTSWITH("hello", "b")
@@ -410,12 +477,13 @@ it("starts with", () => {
 
 **Kind**: global function  
 **Date**: 2022-02-09  
+**Author**: lezzles11 :) www.github.com/lezzles11  
 
-| Param | Type |
-| --- | --- |
-| string | <code>any</code> | 
-| length | <code>any</code> | 
-| ending | <code>any</code> | 
+| Param  | Type             |
+|--------|------------------|
+| string | <code>any</code> |
+| length | <code>any</code> |
+| ending | <code>any</code> |
 
 **Example**  
 
@@ -429,12 +497,13 @@ TRUNCATE("long test", 8, "...") // long tes...
 
 **Kind**: global function  
 **Date**: 2022-02-09  
+**Author**: lezzles11 :) www.github.com/lezzles11  
 
-| Param | Type |
-| --- | --- |
-| string | <code>any</code> | 
-| div | <code>any</code> | 
-| options | <code>any</code> | 
+| Param   | Type             |
+|---------|------------------|
+| string  | <code>any</code> |
+| div     | <code>any</code> |
+| options | <code>any</code> |
 
 **Example**  
 

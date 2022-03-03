@@ -1,12 +1,10 @@
 // can import as a module
-const t = require("./index.js")
-    // or import specific functions
-const { T, F, HASHELPER, HAS, COUNTHELPER, COUNT, ATLEASTHELPER, ATLEAST, DOESNOTHAVEHELPER, DOESNOTHAVE, ISTYPEOF, ENDSWITHHELPER, ENDSWITH, STARTSWITHHELPER, STARTSWITH, TRUNCATE, WRAPHTML } = require("./index.js")
+// or import specific functions
+const { T, F, HASHELPER, HAS, COUNTHELPER, COUNT, ATLEASTHELPER, ATLEAST, DOESNOTHAVEHELPER, DOESNOTHAVE, ISTYPEOF, ISTYPEOFHELPER, ENDSWITHHELPER, ENDSWITH, STARTSWITHHELPER, STARTSWITH, TRUNCATE, WRAPHTML, ISLESSHELPER, ISLESS } = require("../module")
 
 // module.exports + { STARTSWITH, ENDSWITH, ISTYPEOF, DOESNOTHAVE, ATLEAST, COUNTHELPER, HAS, T, F }
 describe("develop simple way of testing elements of divs in strings", () => {
     it('the problem is that i want to see if there were at least 9 instances passed in', () => {
-        t.COUNT("div div div", "div", 9)
         COUNT("hello hellodi", "div", 2)
         F(COUNTHELPER("div div div", "div", 9))
         F(COUNTHELPER("hello hellodi", "div", 2))
@@ -20,6 +18,21 @@ describe("develop simple way of testing elements of divs in strings", () => {
         COUNT("hello hellodi", "hello", 2) // true 
         COUNT("divdiv<div>{{<div>", "div", 4) // true
     });
+
+    it("will accurately depict if value one is less than value two", () => {
+        T(ISLESSHELPER("a", "b", "string"))
+        T(ISLESSHELPER(1, 2, "number"))
+        T(ISLESSHELPER("Dec 11, 1993", "Dec 11, 1994", "date"))
+        F(ISLESSHELPER("b", "a", "string"))
+        F(ISLESSHELPER(2, 1, "number"))
+        F(ISLESSHELPER("Dec 11, 1996", "Dec 11, 1995", "date"))
+        ISLESS("a", "b", "string")
+        ISLESS(1, 2, "number")
+        ISLESS("Dec 11, 1993", "Dec 11, 1994", "date")
+        ISLESS("b", "a", "string")
+        ISLESS(2, 1, "number")
+        ISLESS("Dec 11, 1996", "Dec 11, 1995", "date")
+    })
 
     it('the problem is that the syntax is annoying', () => {
         T(HASHELPER("div div", "div")) // true 
@@ -63,5 +76,16 @@ describe("develop simple way of testing elements of divs in strings", () => {
         T(ENDSWITHHELPER("<div></div>", "</div>"))
         ENDSWITH("HELLO", "o")
         ENDSWITH("<div></div>", "</div>")
+    })
+    it("tests types", () => {
+        let testOne = ISTYPEOFHELPER(new Date(), "date")
+            // console.log("🚀 ~ file: is.js ~ line 67 ~ testOne", testOne)
+        T(testOne)
+        let testTwo = ISTYPEOFHELPER([3, 2, 1], "array")
+            // console.log("🚀 ~ file: is.js ~ line 70 ~ testTwo", testTwo)
+        T(testTwo)
+        let testThree = ISTYPEOFHELPER(3, "number")
+            // console.log("🚀 ~ file: is.js ~ line 73 ~ testThree", testThree)
+        T(testThree)
     })
 })
