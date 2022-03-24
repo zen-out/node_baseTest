@@ -55,10 +55,10 @@ $(()=> {
 **Date**: 2022-03-06  
 **Author**: zen-out  
 
-| Param | Type             |
-|-------|------------------|
-| start | <code>any</code> |
-| end   | <code>any</code> |
+| Param | Type |
+| --- | --- |
+| start | <code>any</code> | 
+| end | <code>any</code> | 
 
 **Example**  
 ```js
@@ -72,11 +72,11 @@ letTrue = when_you_free.isBefore("Dec 11, 2012", "Dec 12, 2012")
 **Date**: 2022-01-13  
 **Author**: zen-out  
 
-| Param | Type             |
-|-------|------------------|
-| one   | <code>any</code> |
-| two   | <code>any</code> |
-| type  | <code>any</code> |
+| Param | Type |
+| --- | --- |
+| one | <code>any</code> | 
+| two | <code>any</code> | 
+| type | <code>any</code> | 
 
 **Example**  
 ```js
@@ -100,11 +100,11 @@ let isTrue4 = when_you_free.difference(dateObject["one"], dateObject["two"], "mo
 **Date**: 2022-03-07  
 **Author**: zen-out  
 
-| Param  | Type             |
-|--------|------------------|
-| target | <code>any</code> |
-| start  | <code>any</code> |
-| end    | <code>any</code> |
+| Param | Type |
+| --- | --- |
+| target | <code>any</code> | 
+| start | <code>any</code> | 
+| end | <code>any</code> | 
 
 **Example**  
 ```js
@@ -129,10 +129,10 @@ let isTrue = when_you_free.isBetween(dateString["one"], dateString["two"], dateS
 **Date**: 2022-03-10  
 **Author**: zen-out  
 
-| Param   | Type             |
-|---------|------------------|
-| getDate | <code>any</code> |
-| limit   | <code>any</code> |
+| Param | Type |
+| --- | --- |
+| getDate | <code>any</code> | 
+| limit | <code>any</code> | 
 
 **Example**  
 ```js
@@ -147,11 +147,11 @@ let getDays2 = dateIsWithinLimit("March 1, 2022", 14) // return true
 **Date**: 2022-03-20  
 **Author**: zen-out  
 
-| Param | Type             |
-|-------|------------------|
-| year  | <code>any</code> |
-| month | <code>any</code> |
-| day   | <code>any</code> |
+| Param | Type |
+| --- | --- |
+| year | <code>any</code> | 
+| month | <code>any</code> | 
+| day | <code>any</code> | 
 
 **Example**  
 ```js
@@ -164,14 +164,14 @@ let day = createDay(2022, 2, 2)
 **Date**: 2022-03-07  
 **Author**: zen-out  
 
-| Param  | Type             |
-|--------|------------------|
-| year   | <code>any</code> |
-| month  | <code>any</code> |
-| day    | <code>any</code> |
-| hour   | <code>any</code> |
-| minute | <code>any</code> |
-| second | <code>any</code> |
+| Param | Type |
+| --- | --- |
+| year | <code>any</code> | 
+| month | <code>any</code> | 
+| day | <code>any</code> | 
+| hour | <code>any</code> | 
+| minute | <code>any</code> | 
+| second | <code>any</code> | 
 
 **Example**  
 ```js
@@ -184,11 +184,11 @@ createFullDate(year, month, day, hour, minute, second)
 **Date**: 2022-03-07  
 **Author**: zen-out  
 
-| Param | Type             |
-|-------|------------------|
-| start | <code>any</code> |
-| end   | <code>any</code> |
-| type  | <code>any</code> |
+| Param | Type |
+| --- | --- |
+| start | <code>any</code> | 
+| end | <code>any</code> | 
+| type | <code>any</code> | 
 
 **Example**  
 ```js
@@ -201,10 +201,10 @@ let getDuration = when_you_free.getDuration("2022-03-01T19:06:31.047Z", "2022-03
 **Date**: 2022-01-13  
 **Author**: zen-out  
 
-| Param   | Type             |
-|---------|------------------|
-| getDate | <code>any</code> |
-| type    | <code>any</code> |
+| Param | Type |
+| --- | --- |
+| getDate | <code>any</code> | 
+| type | <code>any</code> | 
 
 **Example**  
 ```js
@@ -218,10 +218,10 @@ getReadableFormat("Dec 11, 2012", "to") 2 months ago
 **Date**: 2022-03-06  
 **Author**: zen-out  
 
-| Param | Type             |
-|-------|------------------|
-| date  | <code>any</code> |
-| type  | <code>any</code> |
+| Param | Type |
+| --- | --- |
+| date | <code>any</code> | 
+| type | <code>any</code> | 
 
 **Example**  
 ```js
@@ -235,9 +235,9 @@ let formatted2 = when_you_free.format(dateTime["one"], "LL")
 **Date**: 2022-03-07  
 **Author**: zen-out  
 
-| Param  | Type             |
-|--------|------------------|
-| string | <code>any</code> |
+| Param | Type |
+| --- | --- |
+| string | <code>any</code> | 
 
 **Example**  
 ```js
@@ -250,9 +250,9 @@ let digitalOne = when_you_free.digitalToSeconds("11:22")
 **Date**: 2022-01-13  
 **Author**: zen-out  
 
-| Param       | Type             |
-|-------------|------------------|
-| stringInput | <code>any</code> |
+| Param | Type |
+| --- | --- |
+| stringInput | <code>any</code> | 
 
 **Example**  
 ```js

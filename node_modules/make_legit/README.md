@@ -132,9 +132,9 @@ formatDate(data)
 **Date**: 2022-03-03  
 **Author**: zen-out  
 
-| Param | Type             |
-|-------|------------------|
-| data  | <code>any</code> |
+| Param | Type |
+| --- | --- |
+| data | <code>any</code> | 
 
 **Example**  
 ```js
@@ -147,9 +147,9 @@ formatNumber(data)
 **Date**: 2022-03-03  
 **Author**: zen-out  
 
-| Param | Type             |
-|-------|------------------|
-| data  | <code>any</code> |
+| Param | Type |
+| --- | --- |
+| data | <code>any</code> | 
 
 **Example**  
 ```js
@@ -161,9 +161,9 @@ formatArray(data)
 **Kind**: global function  
 **Date**: 2022-03-03  
 
-| Param | Type             |
-|-------|------------------|
-| data  | <code>any</code> |
+| Param | Type |
+| --- | --- |
+| data | <code>any</code> | 
 
 **Example**  
 ```js
@@ -177,9 +177,9 @@ formatString(data)
 **Kind**: global function  
 **Date**: 2022-03-03  
 
-| Param | Type             |
-|-------|------------------|
-| data  | <code>any</code> |
+| Param | Type |
+| --- | --- |
+| data | <code>any</code> | 
 
 <a name="formatBoolean"></a>
 
@@ -188,9 +188,9 @@ formatString(data)
 **Date**: 2022-03-03  
 **Author**: zen-out  
 
-| Param | Type             |
-|-------|------------------|
-| data  | <code>any</code> |
+| Param | Type |
+| --- | --- |
+| data | <code>any</code> | 
 
 **Example**  
 ```js
@@ -203,10 +203,10 @@ formatBoolean(data)
 **Date**: 2022-03-22  
 **Author**: zen-out  
 
-| Param    | Type             |
-|----------|------------------|
-| actual   | <code>any</code> |
-| expected | <code>any</code> |
+| Param | Type |
+| --- | --- |
+| actual | <code>any</code> | 
+| expected | <code>any</code> | 
 
 **Example**  
 ```js
@@ -248,9 +248,9 @@ let first = {
 **Date**: 2022-03-10  
 **Author**: zen-out  
 
-| Param         | Type             |
-|---------------|------------------|
-| objectOrArray | <code>any</code> |
+| Param | Type |
+| --- | --- |
+| objectOrArray | <code>any</code> | 
 
 **Example**  
 ```js
@@ -263,9 +263,9 @@ let isObjectOrArray = effective_knex.getObject([{id: 2}])
 **Returns**: <code>string</code> - data, number, array, string object, boolean undefined  
 **Date**: 2022-03-03  
 
-| Param | Type             |
-|-------|------------------|
-| data  | <code>any</code> |
+| Param | Type |
+| --- | --- |
+| data | <code>any</code> | 
 
 **Example**  
 ```js
